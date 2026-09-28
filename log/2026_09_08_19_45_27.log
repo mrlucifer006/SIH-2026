@@ -1,0 +1,6 @@
+Timestamp: 2026-09-08T19:45:27+05:30
+Action: Fixed errors and updated script to use GPU.
+Details: 
+1. Fixed `UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow` in `sih_sim/prediction.py` by converting the lists of positions and velocities to a single `numpy.ndarray` before converting to a `torch.tensor`.
+2. Updated `start.py` to change `--device cpu` to `--device cuda` per user's request.
+3. Updated `start.py` to run tests via `python -m pytest -q` instead of `pytest -q` and used `sys.executable` to ensure all subprocesses run in the activated virtual environment, resolving `ModuleNotFoundError: No module named 'sih_sim'` and `ModuleNotFoundError: No module named 'torch'`.

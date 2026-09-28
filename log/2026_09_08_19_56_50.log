@@ -1,0 +1,3 @@
+Timestamp: 2026-09-08T19:56:50+05:30
+Action: Generated a collage of simulation outputs.
+Details: Wrote a Python script `make_collage.py` using `matplotlib` to stitch together all 5 scenario PNG outputs generated in the `outputs` directory. Saved the resulting collage as `outputs/collage.png`, copied it to the artifact directory, and presented it to the user in the `scenario_collage.md` artifact.

@@ -1,0 +1,8 @@
+Timestamp: 2026-09-08T19:41:33+05:30
+Action: Created `start.py`
+Details: Created a python script `start.py` that sequentially runs all the command-line commands found in the WALKTHROUGH.md sections "Run the demonstration" and "Run checks" using the `subprocess` module.
+Commands Included:
+- `python -m sih_sim.cli --scenario all --device auto --plot --output outputs`
+- `python -m sih_sim.cli --scenario market --device cuda --plot`
+- `python -m sih_sim.cli --scenario village --device cpu`
+- `pytest -q`

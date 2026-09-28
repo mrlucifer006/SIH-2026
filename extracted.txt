@@ -1,0 +1,103 @@
+TITLE PAGE
+SMART INDIA HACKATHON 2026
+• Problem Statement ID – SIH26037
+• Problem Statement Title- Adaptive path planning and collision avoidance 
+in autonomous vehicle on unstructured Indian Roads
+• Theme- Smart Vehicles
+• PS Category- Software
+• Team ID-
+• Team Name - IQ Holders
+IDEA TITLE
+•
+Problem Context: The solution addresses the "Adaptive Path Planning and 
+Collision Avoidance for Autonomous Vehicles on Unstructured Indian Roads" 
+challenge under the Smart Vehicles theme.
+•
+Core Concept: A dynamic, closed-loop simulation pipeline that abandons strict 
+lane-based assumptions in favor of probabilistic, real-time trajectory mapping.
+•
+Uniqueness: The system specifically predicts the irregular, short-term motion of 
+uniquely Indian road agents (e.g., auto-rickshaws, pushcarts, and pedestrians) and 
+instantly recalculates safe paths when faced with sudden obstacles or missing lane 
+markings.
+2
+@SIH Idea submission- Template
+IQ Holders
+TECHNICAL APPROACH
+•
+Scenario Generation: Use MathWorks RoadRunner to design the five critical test 
+environments, including unmarked village roads, dense markets, and busy urban 
+intersections without signals.
+•
+Perception Pipeline: Integrate the Automated Driving Toolbox for sensor fusion 
+(combining simulated camera, LiDAR, and radar data) and the Deep Learning 
+Toolbox to detect diverse traffic using datasets like the Indian Driving Dataset (IDD).
+•
+Decision & Planning: Implement the Navigation Toolbox to generate collision-free 
+paths and Stateflow to design the state-machine logic required to handle abrupt 
+events like sudden cattle crossings or informal highway merging.
+•
+Vehicle Dynamics: Use the Vehicle Dynamics Blockset (or a Simulink bicycle 
+model) to accurately simulate vehicle physics and validate metrics like replanning 
+latency and path smoothness.
+3
+@SIH Idea submission- Template
+IQ Holders
+FEASIBILITY AND VIABILITY
+
+Feasibility
+Software-Only Execution
+The software-only category makes this 
+highly feasible, as the entire 
+perception-to-planning pipeline can be 
+built and validated within the 
+MATLAB/Simulink ecosystem.
+4
+
+Challenges
+Replanning Latency
+A major technical hurdle is keeping 
+replanning latency low when predicting 
+multiple erratic agents in dense traffic.
+@SIH Idea submission- Template
+
+Mitigation
+Model Optimization
+This can be overcome by optimizing deep 
+learning models for inference speed and 
+using simplified bounding-box predictions 
+for less critical peripheral agents.
+IQ Holders
+IMPACT AND BENEFITS
+
+Social & Economic Benefit
+Safety-First ADAS Adaptation
+Safely adapts autonomous driving technology to 
+India's unique, unstructured road network, 
+drastically reducing collision risks.
+
+Scalability
+Validated Testing Framework
+Provides a validated, localized testing framework 
+that automotive manufacturers can use to deploy 
+Advanced Driver Assistance Systems (ADAS) 
+tailored for developing nations.
+5
+@SIH Idea submission- Template
+IQ Holders
+RESEARCH  AND REFERENCES
+"IDD: A Dataset for Exploring Problems of Autonomous Navigation in 
+Unconstrained Environments" (Varma et al., WACV): This is the primary academic 
+citation required if you utilize the IDD dataset for training your perception models.
+"Explainable AI in Scene Understanding for Autonomous Vehicles in Unstructured 
+Indian Roads" (MDPI): This paper proposes practical deep learning architectures for 
+semantic segmentation on unstructured Indian roadways, specifically focusing on 
+accurately segmenting drivable versus non-drivable areas in the absence of lane 
+markings.
+"Autonomous Ground Robot in Unstructured Environments: How Far Have We 
+Come?" (Journal of Field Robotics, 2026): A comprehensive, up-to-date survey covering 
+over 250 recent papers on environmental perception, real-time path planning, and 
+non-lane-based end-to-end driving.
+6
+@SIH Idea submission- Template
+IQ Holders

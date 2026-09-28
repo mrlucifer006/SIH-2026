@@ -1,0 +1,6 @@
+# Install a CUDA-enabled PyTorch wheel appropriate for your CUDA version first:
+# https://pytorch.org/get-started/locally/
+torch>=2.2
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8.0

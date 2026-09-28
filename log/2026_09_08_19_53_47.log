@@ -1,0 +1,3 @@
+Timestamp: 2026-09-08T19:53:47+05:30
+Action: Generated Data Pipeline and Simulink instructions.
+Details: Created the `pipeline_and_simulink_instructions.md` artifact detailing the before/after simulation data pipeline, specifically highlighting the transition from proprietary MathWorks environments to a portable Python implementation. Included step-by-step instructions on configuring the MATLAB Python environment and running the Python planner wrapper in Simulink via the MATLAB Function block or the Python Importer block.
